@@ -8,7 +8,7 @@ class HomeController(viewsets.ModelViewSet):
         pass
 
     def home(self, request):
-        response_data = {'data':'data'}
+        response_data = {'data':'PATIL MATHADRCHOD'}
         return JsonResponse(response_data, status=201)
         
 
