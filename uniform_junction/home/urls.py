@@ -7,7 +7,8 @@ from django.conf.urls.static import static
 router = SimpleRouter()
 
 api_routes = [
-    path('home', HomeController.as_view({'get': 'home'}), name="home")
+    # path('home', HomeController.as_view({'get': 'home'}), name="home")
+    path(r'^$', HomeController.as_view({'get': 'home'}), name="home"),
 ]
 
 urlpatterns = api_routes
